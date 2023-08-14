@@ -1,3 +1,7 @@
+<div>
+  <%= flash[:notice] %>
+</div>
+
 <table>
   <tr>
     <th>Title:</th>
@@ -10,11 +14,13 @@
     <td><%= @book.body %></td>
   </tr>
 
+</table>
+
+<table>
   <tr>
     <td><%= link_to 'Edit' , edit_book_path %></td>
-    <td>|</td>
+    <td>|</t>
     <td><%= link_to 'Back', books_path %></td>
   </tr>
-
 
 </table>
